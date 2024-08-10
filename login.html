@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Masuk</h1>
+        <br>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Nama Anda</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password Yang Menurut Anda Kuat</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Mencegah form submit default
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username && password) { // Memastikan kedua input telah diisi
+                localStorage.setItem('loggedIn', 'true'); // Menyimpan status login di localStorage
+                localStorage.setItem('username', username); // Menyimpan nama pengguna di localStorage
+                localStorage.setItem('password', password); // Menyimpan kata sandi di localStorage
+                window.location.href = 'index.html'; // Mengarahkan ke halaman utama
+            } else {
+                alert('Harap isi nama pengguna dan kata sandi'); // Menampilkan pesan jika input belum diisi
+            }
+        });
+    </script>
+</body>
+
+</html>

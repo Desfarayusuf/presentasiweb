@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keamanan Dalam Berinternet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stuff.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Gambar kecil di pojok kiri -->
+        <img src="img/LogoUndip.png" alt="Logo Undip" class="logo-kiri" onclick="openLogoModal()">
+        <!-- Gambar kecil di pojok kanan -->
+        <img src="img/LogoDesaPasir.png" alt="Logo Desa Pasir" class="logo-kanan" onclick="openLogoModal()">
+        <!-- Modal for logos -->
+        <div id="logoModal" class="modal2">
+            <span class="close3" onclick="closeLogoModal()">&times;</span>
+            <div class="modal-content2">
+                <img src="img/LogoUndip.png" alt="Logo Undip"><img src="img/LogoDesaPasir.png" alt="Logo Desa Pasir">
+                
+            </div>
+        </div>
+
+
+        <div class="pembuka">
+            <p><strong>Selamat Datang <span id="username-placeholder"></span> dalam presentasi</strong></p>
+            <h1>Keamanan Dalam Berinternet</h1>
+            <p><strong>Dari: Desfara Dyabi Yusuf</strong></p>
+        </div>
+
+        <section class="satu">
+            <h2>Apa Itu Internet?</h2>
+            <p>Internet adalah jaringan global yang menghubungkan jutaan komputer dan perangkat lain di seluruh dunia,
+                memungkinkan mereka untuk berkomunikasi dan berbagi informasi satu sama lain.</p>
+            <img src="img/globe-9.gif" alt="">
+        </section>
+
+        <section class="dua">
+            <h2>Apa Itu Keamanan Ber-internet?</h2>
+            <p>Merujuk pada praktik dan langkah-langkah yang diambil untuk melindungi informasi, data, dan perangkat
+                dari
+                ancaman online seperti peretasan, malware, phishing, dan penipuan. Ini mencakup berbagai aspek seperti
+                proteksi
+                data pribadi, keamanan jaringan, penggunaan perangkat lunak keamanan, dan pengelolaan risiko di
+                lingkungan
+                digital.</p>
+        </section>
+
+        <section class="tiga">
+            <h2>Jenis Keamanan</h2>
+            <ul>
+                <li>Keamanan Pribadi Secara Informasi<span class="hide-on-laptop"><br></span> (Data Privacy)</li>
+                <li>Keamanan Sikap dalam Berinternet<span class="hide-on-laptop"><br></span> (Cyber Hygiene)</li>
+                <li>Keamanan Perilaku Online<span class="hide-on-laptop"><br></span> (Online Behavior Security)</li>
+                <li>Keamanan Anak-anak di Internet<span class="hide-on-laptop"><br></span> (Internet Safety for
+                    Children)</li>
+            </ul>
+        </section>
+
+        <section class="empat">
+            <h2>Keamanan Pribadi Secara Informasi (Data Privacy)</h2>
+            <p>"Pribadi secara informasi" atau "personal information security" berfokus pada perlindungan data dan
+                informasi
+                pribadi yang dimiliki oleh individu dari akses, penggunaan, atau penyalahgunaan yang tidak sah. Ini
+                melibatkan
+                berbagai langkah dan praktik untuk memastikan bahwa data pribadi tetap aman dan privasi terjaga.</p>
+            <h3>- Identitas Pribadi</h3>
+            <ul>
+                <!-- <li>Nama lengkap, alamat rumah, nomor telepon, tanggal lahir.</li> -->
+            </ul>
+            <h3>- Informasi Keuangan</h3>
+            <ul>
+                <!-- <li>Nomor kartu kredit, informasi rekening bank, data transaksi.</li> -->
+            </ul>
+            <h3>- Data Kesehatan</h3>
+            <ul>
+                <!-- <li>Riwayat medis, informasi asuransi kesehatan.</li> -->
+            </ul>
+            <h3>- Informasi Login</h3>
+            <ul>
+                <!-- <li>Nama pengguna, kata sandi, PIN.</li> -->
+            </ul>
+        </section>
+
+        <section class="lima">
+            <h2>Keamanan Sikap dan Perilaku dalam Berinternet (Cyber Hygiene)</h2>
+            <ul>
+                <li class="lima-satu">Penggunaan Kata Sandi yang Kuat
+                    <div class="container1">
+                        <div class="input-box">
+                            <input class="passwordrate" spellcheck="false" type="text" name="password"
+                                placeholder="Masukkan kata sandi yang kuat" oninput="updateLength()">
+                            <span id="password-length">0</span>
+                        </div>
+                        <div class="indicator">
+                            <div class="icon-text">
+                                <h6 class="text">Coba ukur password kamu</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tips-password">
+                        <p><b>Tips Kata Sandi yang Kuat:</b></p>
+                        <ul>
+                            <li>Gunakan setidaknya 8 karakter.</li>
+                            <li>Gabungkan huruf besar dan kecil.</li>
+                            <li>Gunakan angka dan simbol (misalnya: !, @, #, $).</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="lima-dua"><b>Rajin Mencadangkan Data:</b> Membuat salinan cadangan data penting secara rutin
+                    untuk menghindari kehilangan data.</li>
+                <li class="lima-tiga"><b>Selalu Berhati-hati Saat Mengunduh:</b> Hanya mengunduh perangkat lunak dan
+                    file dari sumber yang tepercaya.</li>
+                <div class="image-gallery">
+                    <img src="img/dwnld1.png" alt="Download Image 1" onclick="openModal('img/dwnld1.png')">
+                    <img src="img/dwnld2.jpg" alt="Download Image 2" onclick="openModal('img/dwnld2.jpg')">
+                    <img src="img/dwnld3.jpeg" alt="Download Image 3" onclick="openModal('img/dwnld3.jpeg')">
+                </div>
+                <div id="imageModal" class="modal">
+                    <span class="close2" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                </div>
+
+                <li class="lima-empat"><b>Berhati-hati dalam Berbagi Informasi Pribadi:</b> Tidak memberikan informasi
+                    pribadi kepada pihak yang tidak dikenal atau situs web yang tidak tepercaya.</li>
+                <li class="lima-lima"><b>Waspada terhadap Phishing:</b> Mengenali dan menghindari email, pesan atau
+                    situs yang
+                    mencoba menipu pengguna untuk memberikan informasi pribadi.</li>
+                <li class="lima-enam"><b>Perilaku yang Etis:</b> Menggunakan internet secara bertanggung jawab dan tidak
+                    melakukan kegiatan ilegal atau tidak etis.</li>
+                <li class="lima-tujuh"><b>Hindari Mengklik Iklan Pop-up atau link ajakan</b></li>
+            </ul>
+        </section>
+
+        <section class="lima_setengah">
+            <h4>Ingin mendapat uang 271T dengan cepat mudah <br>dan tidak halal...? <a href="#" id="link-berikut">Klik
+                    Link berikut</a> hehe...</h4>
+            <!-- Pop-up Modal -->
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close">&times;</span>
+                    <img id="popup-img" src="img/menyala-1.gif" alt="Menyala GIF">
+                </div>
+            </div>
+            <!-- Pop-up Modal -->
+        </section>
+
+        <section class="enam">
+            <h2>Keamanan Anak-anak di Internet (Internet Safety for Children)</h2>
+            <ul>
+                <li><b>Pendidikan dan Kesadaran:</b> Mengajarkan anak-anak tentang risiko online dan bagaimana cara
+                    bersikap aman di internet.</li>
+                <li><b>Pembatasan Konten:</b> Menggunakan perangkat lunak kontrol orang tua untuk membatasi akses ke
+                    konten yang tidak sesuai.</li>
+                <li><b>Pemantauan Aktivitas Online:</b> Mengawasi aktivitas online anak-anak untuk memastikan mereka
+                    tidak terlibat dalam kegiatan berbahaya.</li>
+                <li><b>Waktu Layar yang Sehat:</b> Mengatur batasan waktu penggunaan perangkat elektronik untuk
+                    memastikan anak-anak memiliki keseimbangan antara waktu online dan aktivitas fisik serta interaksi
+                    sosial di dunia nyata.</li>
+            </ul>
+        </section>
+        <div class="penutup">
+            <p><strong>Terimakasih <span id="username-placeholder2"></span> telah datang dalam presentasi</strong></p>
+            <h1>Keamanan Dalam Berinternet</h1>
+            <p><strong>Dari: Desfara Dyabi Yusuf</strong></p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        // Memeriksa apakah pengguna sudah login
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'login.html'; // Jika belum, arahkan kembali ke halaman login
+        } else {
+            // Mengambil nama pengguna dan kata sandi dari localStorage
+            const username = localStorage.getItem('username');
+            const password = localStorage.getItem('password');
+
+            // Menampilkan nama pengguna dan kata sandi
+            document.getElementById('username-placeholder').innerText = username;
+            const passwordInput = document.querySelector('.passwordrate');
+            passwordInput.value = password;
+
+            document.getElementById('username-placeholder2').innerText = username;
+
+            // Panggil fungsi untuk mengukur kekuatan password
+            measurePasswordStrength(password);
+        }
+
+        function measurePasswordStrength(password) {
+            const input = document.querySelector(".passwordrate");
+            const indicator = document.querySelector(".indicator");
+            const text = document.querySelector(".text");
+
+            let alphabet = /[a-zA-Z]/, // letter a to z and A to Z
+                numbers = /[0-9]/, // numbers 0 to 9
+                specialCharacters = /[!,@,#,$,%,^,&,*,?,_,(,),-,+,=,~]/; // special characters
+
+            let val = password || input.value; // Use localStorage password if available, otherwise use input value
+
+            indicator.classList.remove("hidden"); // Make sure indicator is visible
+
+            if (val.match(alphabet) || val.match(numbers) || val.match(specialCharacters)) {
+                text.textContent = "Password Anda Lemah, Coba Lagi";
+                input.style.borderColor = "#FF6333";
+                indicator.className = "indicator weak";
+            }
+            if (val.match(alphabet) && val.match(numbers) && val.length >= 6) {
+                text.textContent = "Password Anda Lumayan";
+                input.style.borderColor = "#cc8500";
+                indicator.className = "indicator medium";
+            }
+            if (val.match(alphabet) && val.match(numbers) && val.match(specialCharacters) && val.length >= 8) {
+                text.textContent = "Password Anda Kuat, Kerja Bagus";
+                input.style.borderColor = "#22C32A";
+                indicator.className = "indicator strong";
+            }
+
+            if (val === "") {
+                indicator.classList.add("hidden");
+                input.style.borderColor = "#A6A6A6";
+                text.textContent = "Coba ukur password kamu"; // Tampilkan kembali teks asli
+            }
+        }
+
+        // Pop-up Modal Script
+        const modal = document.getElementById("popup");
+        const link = document.getElementById("link-berikut");
+        const span = document.getElementsByClassName("close")[0];
+
+        link.onclick = function (event) {
+            event.preventDefault(); // Prevent the default action
+            modal.style.display = "flex";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Password Strength Script
+        const input = document.querySelector(".passwordrate");
+
+        input.addEventListener("keyup", () => {
+            measurePasswordStrength();
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            updateLength(); // Inisialisasi panjang saat halaman dimuat
+        });
+
+        function updateLength() {
+            var passwordInput = document.querySelector('.passwordrate');
+            var lengthDisplay = document.getElementById('password-length');
+            lengthDisplay.textContent = passwordInput.value.length;
+        }
+
+
+
+        function openModal(imageSrc) {
+            var modal = document.getElementById("imageModal");
+            var modalImg = document.getElementById("modalImg");
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            var modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        function openLogoModal() {
+            var logoModal = document.getElementById("logoModal");
+            logoModal.style.display = "block";
+        }
+
+        function closeLogoModal() {
+            var logoModal = document.getElementById("logoModal");
+            logoModal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            var logoModal = document.getElementById("logoModal");
+            if (event.target == logoModal) {
+                logoModal.style.display = "none";
+            }
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

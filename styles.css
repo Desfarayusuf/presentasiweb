@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f07b0e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Warna putih dengan 80% opasitas */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    /* Menambahkan properti ini untuk membuat teks rata tengah */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #363636;
+}
+
+h3 {
+    color: #363636;
+}
+
+p,
+ul {
+    color: #353535;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.pembuka {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+/* Media query untuk perangkat dengan lebar layar lebih dari 768px (misalnya laptop) */
+@media (min-width: 768px) {
+    .pembuka {
+        margin-top: 27%;
+        margin-bottom: 27%;
+    }
+}
+
+
+.satu {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+
+.satu img {
+    max-width: 45%;
+
+}
+
+/* Media query untuk perangkat dengan lebar layar lebih dari 768px (misalnya laptop) */
+@media (min-width: 768px) {
+    .satu img {
+        max-width: 33%;
+    }
+
+
+    .image-gallery img{
+        max-width: 33%;
+    }
+}
+
+.dua {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+
+.tiga {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+
+/* Menghilangkan titik di depan elemen list */
+.tiga ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.tiga ul li {
+    margin-bottom: 10px; /* Menambahkan sedikit margin bawah untuk spasi */
+}
+
+.empat {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+/* Menghilangkan titik di depan elemen list */
+.empat ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.empat ul li {
+    margin-bottom: 10px; /* Menambahkan sedikit margin bawah untuk spasi */
+}
+
+
+.lima {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+/* Menghilangkan titik di depan elemen list */
+.lima ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.lima ul li {
+    margin-bottom: 10px; /* Menambahkan sedikit margin bawah untuk spasi */
+}
+
+.image-gallery img{
+    width: 79%;
+}
+
+.tips-password {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.tips-password ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+
+
+/* #popup-img{
+    max-width: 73%;
+} */
+
+
+.enam {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+/* Menghilangkan titik di depan elemen list */
+.enam ul {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.enam ul li {
+    margin-bottom: 10px; /* Menambahkan sedikit margin bawah untuk spasi */
+}
+
+
+.penutup {
+    margin-top: 81%;
+    margin-bottom: 81%;
+}
+
+
+
+
+
+
+
+/* Media query untuk layar laptop */
+@media (min-width: 768px) {
+    .hide-on-laptop {
+        display: none; /* Menyembunyikan elemen dengan kelas 'hide-on-laptop' pada layar laptop */
+    }
+}
+
+
+/* Media query untuk perangkat dengan lebar layar lebih dari 768px (misalnya laptop) */
+@media (min-width: 768px) {
+    .satu {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .dua {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .tiga {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .empat {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .lima {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .enam {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+
+    .penutup {
+        margin-top: 33%;
+        margin-bottom: 33%;
+    }
+}

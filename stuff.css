@@ -1,0 +1,263 @@
+.container {
+            position: relative;
+            padding: 20px;
+        }
+
+#username-placeholder {
+    color: blue;
+    /* Ubah 'blue' dengan warna yang diinginkan */
+}
+
+#username-placeholder2{
+    color: blue;
+}
+
+
+.logo-kiri {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 73px;
+    height: auto;
+}
+
+.logo-kanan {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 73px;
+    height: auto;
+}
+
+
+/* Pop-up Modal */
+.popup {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    position: relative;
+    background-color: transparent; /* Make background transparent */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    display: inline-block;
+}
+
+.popup-content img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Media query untuk layar laptop */
+@media (min-width: 768px) {
+.popup-content img {
+width: 80%;
+}
+
+
+#modalImg{
+    width: 29%;
+}
+
+
+.container1 {
+    background-color: white;
+    width: 50%; /* Ukuran bisa disesuaikan sesuai kebutuhan */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 17px;
+}
+
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: rgb(95, 86, 86);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid rgb(95, 86, 86); /* Add border */
+    border-radius: 50%; /* Make it circular */
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for better visibility */
+    width: 40px; /* Ensure width */
+    height: 40px; /* Ensure height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.passwordrate{
+width: 60%;
+height: 200%;
+}
+
+
+.container1 {
+    background-color: white;
+    width: 81%; /* Ukuran bisa disesuaikan sesuai kebutuhan */
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 17px;
+}
+
+/* Style for password strength indicator */
+.indicator {
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff; /* default text color */
+}
+
+.indicator.weak {
+    color: #FF6333; /* red */
+}
+
+.indicator.medium {
+    color: #cc8500; /* orange */
+}
+
+.indicator.strong {
+    color: #22C32A; /* green */
+}
+
+.indicator.hidden {
+    color: #949494; /* grey */
+}
+
+#password-length {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+/* .image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+} */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 8%;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+
+.modal-content2 {
+    margin: auto;
+    display: block;
+    width: 5%;
+    text-align: center;
+    
+}
+
+.modal-content2 img{
+    width: 350%;
+}
+
+.close2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Modal for logos */
+#logoModal .modal-content2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
